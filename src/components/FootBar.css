@@ -1,0 +1,35 @@
+.footBar {
+    /* background-color: linear-gradient(to right, #EAEAD0 , #C7C7A5); */
+    
+    height: auto;
+    width: 740px;
+}
+
+/* style button as href-link */
+.link-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    color: green;
+  }
+  
+  .link-button:hover,
+  .link-button:focus {
+  text-decoration: none;
+  }
+
+.left-span {
+    float:left;
+    display: flex;    
+}
+
+.right-span {
+    float: right;
+    display: flex;    
+}
+  
+
