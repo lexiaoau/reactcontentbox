@@ -1,0 +1,19 @@
+.contentBar {
+    height: 150px;
+    width: 750px;
+    display: flex;
+  }
+
+.contentBar img{ 
+    width:250px; 
+    height:150px
+} 
+
+.contentBar p{ 
+    width: 480px; 
+    height: 150px
+} 
+
+
+
+  
