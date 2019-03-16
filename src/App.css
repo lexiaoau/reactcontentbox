@@ -11,6 +11,11 @@
 
   display: flex;
   flex-direction: column;
+
+}
+
+.ContentBox .TitleBar {
+  align-content: flex-start;
 }
 
 .ContentBox .ContentBarClass {
