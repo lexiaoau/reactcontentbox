@@ -30,7 +30,7 @@ class App extends Component {
     {
       console.log("index out of range:" + newIndex);
       return;
-    }
+    } 
 
     this.setState({index: newIndex});
 
@@ -48,23 +48,9 @@ class App extends Component {
     let prevTitle = "";
     let nextTitle = "";
 
-    if( this.state.index === 0 )
-    {
-      prevTitle = "Prev";
-    }
-    else
-    {
-      prevTitle = this.jsonDataArray[this.state.index-1].title;
-    }
-
-    if( this.state.index === (this.jsonDataArray.length - 1) )
-    {
-      nextTitle = "Next";
-    }
-    else
-    {
-      nextTitle = this.jsonDataArray[this.state.index+1].title;
-    }    
+    prevTitle = ( this.state.index === 0 ) ? "Prev" : this.jsonDataArray[this.state.index-1].title;
+   
+    nextTitle = ( this.state.index === (this.jsonDataArray.length - 1) ) ? "Next" : this.jsonDataArray[this.state.index+1].title;
 
     let currentContent = this.jsonDataArray[this.state.index].description;    
 
